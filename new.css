@@ -1,0 +1,126 @@
+body{
+	margin :0;
+	padding :0;
+	background-image:linear-gradient(to right, #DECBA4, #3E5151);
+}
+.bday{
+   margin-top: 80px;
+  text-align:center;
+  color: #F5C21B;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0052b0), to(#b340b3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: bday;
+  font-size: 10em;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+.name
+{
+  margin-top: 80px;
+  text-align:center;
+  color: #F5C21B;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5C21B), to(#D17000));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 10em;
+  font-weight: 900;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.name::before
+{
+	background-position: -180px;
+	-webkit-animation: flare 5s infinite;
+  -webkit-animation-timing-function: linear;
+  background-image: linear-gradient(65deg, transparent 20%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.3) 27%, transparent 27%, transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: "Sakthi Ganesh";
+  color: #FFF;
+  display: block;
+  padding-right: 140px;
+  position: absolute;
+}
+
+.name::after
+{
+  content: "Sakthi Ganesh";
+  color: #FFF;
+  display: block;
+  position: absolute;
+  text-shadow: 0 1px #6E4414, 0 2px #6E4414, 0 3px #6E4414, 0 4px #6E4414, 0 5px #6E4414, 0 6px #6E4414, 0 7px #6E4414, 0 8px #6E4414, 0 9px #6E4414, 0 10px #6E4414;
+  top: 0;
+  z-index: -1;
+}
+
+.inner-name::after, .inner-name::before
+{
+		-webkit-animation: sparkle 5s infinite;
+  -webkit-animation-timing-function: linear;
+	background: #FFF;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #FFF, 0 0 25px #FFF, 0 0 30px #FFF, 0 0 35px #FFF;
+  content: "";
+  display: block;
+  height: 10px;
+  opacity: 0.7;
+  position: absolute;
+  width: 10px;
+}
+
+.inner-name::before
+{
+	-webkit-animation-delay: 0.2s;
+  height: 7px;
+  left: 0.12em;
+  top: 0.8em;
+  width: 7px;
+}
+
+.inner-name::after
+{
+  top: 0.32em;
+  right: -5px;
+}
+
+@-webkit-keyframes flare
+{
+  0%   { background-position: -180px; }
+  30%  { background-position: 500px; }
+  100% { background-position: 500px; }
+}
+
+@-webkit-keyframes sparkle
+{
+  0%   { opacity: 0; }
+  30%  { opacity: 0; }
+  40%  { opacity: 0.8; }
+  60%  { opacity: 0; }
+  100% { opacity: 0; }
+}	
+@font-face{
+font-family:bday;
+src: url(bday.ttf);
+}
+.image{
+	width: 250px;
+	height: 250px;
+	background-image:url('new.jpg');
+	background-size:cover;
+	display: block;
+	 border-top-left-radius: 125px;
+	 -webkit-border-top-left-radius: 125px;
+	 -moz-border-top-left-radius: 125px;
+	 border-bottom-right-radius: 125px;
+	 -webkit-border-bottom-right-radius: 125px;
+	 -moz-border-bottom-right-radius: 125px;
+
+}
